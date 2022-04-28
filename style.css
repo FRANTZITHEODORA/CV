@@ -1,0 +1,784 @@
+body {
+	background-color: #f8f9fc;
+}
+
+p {
+	color: white;
+    font-size: 11px;
+}
+
+greenfond {
+	color: green;
+}
+
+h1 {
+	font-size: 2vw;
+}
+
+.pcl {
+	  font-family:Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";	
+		font-size: 2vw;
+       text-align: justify;
+  text-align-last: right;
+      margin-left:5vw;
+    }
+	
+:root {
+  --main-color: #ecf0f1;
+  --point-color: #555;
+  --size: 0.5vw;
+}
+
+.loader {
+  background-color: white;
+  width: 1%;
+  height: 1%;
+  position: fixed;
+  top: 10; 
+  left: 45%;
+  display: flex;
+  align-items: center;
+  align-content: center; 
+  justify-content: center;  
+  z-index: 100000;
+}
+
+.loader__element {
+  border-radius: 100%;
+  border: var(--size) solid var(--point-color);
+  margin: calc(var(--size)*2);
+}
+
+.loader__element:nth-child(1) {
+  animation: preloader .6s ease-in-out alternate infinite;
+}
+.loader__element:nth-child(2) {
+  animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+
+.loader__element:nth-child(3) {
+  animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+
+@keyframes preloader {
+  100% { transform: scale(2); }
+}
+
+
+
+.logo-holder {
+    background: white;
+         width: 1vw;
+        height: 1vw;
+      position: relative;
+   margin-left: -80% ;
+   padding-top: 20vw;
+padding-bottom: 24px;
+-webkit-transform: translateZ(0);
+ }
+
+		.bg {
+	   position: absolute;
+			top: 9px;
+		   left: 8px;
+		  right: 8px;
+		 bottom: 8px;
+url(http://boutique.flarework.com/wp-content/themes/boutique/img/logo_large.png) center 0px no-repeat
+background-size: contain;
+    -webkit-filter: drop-shadow(0px 6px 25px rgba(0,0,0,0.5));
+	}
+
+.bar {
+    position: relative;
+    height: 50%;
+    background: white;
+    width:  50%;
+    top: 2%;
+    left: 2%;
+    margin-top: 5px;
+    animation: fill 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill1 {
+  animation: fill-1 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill2 {
+   animation:  fill-2 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill3 {
+   animation:  fill-3 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+.bar.fill4 {
+   animation:  fill-4 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill5 {
+   animation:  fill-5 5s infinite alternate, colors 5s infinite alternate;
+}
+
+.bar.fill6 {
+   animation:  fill-6 5s infinite alternate, colors 5s infinite alternate;
+}
+
+
+
+@keyframes fill {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 105px; }
+}
+
+@keyframes fill-1 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 20px;}
+  100% { width: 130px; }
+}
+
+@keyframes fill-2 {
+  0%   { width: 0; }
+  33%  { width: 90px;}
+  66%  { width: 70px;}
+  100% { width: 136px; }
+}
+
+@keyframes fill-3 {
+  0%   { width: 0; }
+  33%  { width: 50px;}
+  66%  { width: 24px;}
+  100% { width: 109px; }
+}
+
+@keyframes fill-4 {
+  0%   { width: 0; }
+  33%  { width: 98px;}
+  66%  { width: 34px;}
+  100% { width: 99px; }
+}
+
+@keyframes fill-5 {
+  0%   { width: 0; }
+  33%  { width: 30px;}
+  66%  { width: 10px;}
+  100% { width: 148px; }
+}
+
+
+@keyframes fill-6 {
+  0%   { width: 0; }
+  33%  { width: 48px;}
+  66%  { width: 22px;}
+  100% { width: 140px; }
+}
+
+@keyframes colors {
+  0% { background-color: #5a5a5a;}
+  50% { background-color: #3a3;}
+  100% { background-color: #6a6a6a;}
+}
+
+
+.coccoc-alo-ph-circle {
+    width: 9vw;
+    height: 9vw;
+    top: 6vw;
+    left: 13vw;
+    position: absolute;
+    background-color: transparent;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 0.5vw solid rgba(30, 30, 30, 0.4);
+    opacity: .1;
+    -webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+    -moz-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+    -ms-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+    -o-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.coccoc-alo-phone {
+    background-color: transparent;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+    z-index: 200000 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: visibility .5s;
+    -moz-transition: visibility .5s;
+    -o-transition: visibility .5s;
+    transition: visibility .5s;
+    right: 1.5vw;
+    top: 0vw;
+}
+
+.coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-circle-fill {
+    background-color: rgba(0, 175, 242, 0.5);
+    opacity: .75 !important;
+}
+
+.coccoc-alo-ph-circle-fill {
+    width: 7vw;
+    height: 7vw;
+    top: 7.3vw;
+    left: 14vw;
+    position: absolute;
+    background-color: #000;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 0.5vw solid transparent;
+    opacity: .1;
+    -webkit-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    -moz-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    -ms-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    -o-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.coccoc-alo-ph-img-circle {
+    width: 5vw;
+    height: 5vw;
+    top: 8vw;
+    left: 15vw;
+    position: absolute;
+    background: rgba(30, 30, 30, 0.1) url(https://drive.google.com/uc?id=1V3N2b79QjDWetC_ss9wI3c-xpWDymn9R) no-repeat center center;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 0.5vw solid transparent;
+    opacity: .7;
+    -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+}
+
+.coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-img-circle {
+    background-color: #00aff2;
+	opacity: .7;
+}
+
+.coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-circle {
+    border-color: #00aff2;
+    opacity: .5;
+}
+
+.coccoc-alo-phone.coccoc-alo-green.coccoc-alo-hover .coccoc-alo-ph-circle,
+.coccoc-alo-phone.coccoc-alo-green:hover .coccoc-alo-ph-circle {
+    border-color: #75eb50;
+    opacity: .5;
+}
+
+.coccoc-alo-phone.coccoc-alo-green.coccoc-alo-hover .coccoc-alo-ph-circle-fill,
+.coccoc-alo-phone.coccoc-alo-green:hover .coccoc-alo-ph-circle-fill {
+    background-color: rgba(117, 235, 80, 0.5);
+    opacity: .75 !important;
+}
+
+.coccoc-alo-phone.coccoc-alo-green.coccoc-alo-hover .coccoc-alo-ph-img-circle,
+.coccoc-alo-phone.coccoc-alo-green:hover .coccoc-alo-ph-img-circle {
+    background-color: #75eb50;
+}
+
+@-moz-keyframes coccoc-alo-circle-anim {
+    0% {
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+    30% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@-webkit-keyframes coccoc-alo-circle-anim {
+    0% {
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+    30% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@-o-keyframes coccoc-alo-circle-anim {
+    0% {
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+    30% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@keyframes coccoc-alo-circle-anim {
+    0% {
+        transform: rotate(0) scale(.5) skew(1deg);
+        opacity: .1
+    }
+    30% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .5
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .1
+    }
+}
+
+@-moz-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-webkit-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-o-keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@keyframes coccoc-alo-circle-fill-anim {
+    0% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg);
+        opacity: .2
+    }
+    100% {
+        transform: rotate(0) scale(.7) skew(1deg);
+        opacity: .2
+    }
+}
+
+@-moz-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-webkit-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@-o-keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@keyframes coccoc-alo-circle-img-anim {
+    0% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    10% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    20% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    30% {
+        transform: rotate(-25deg) scale(1) skew(1deg)
+    }
+    40% {
+        transform: rotate(25deg) scale(1) skew(1deg)
+    }
+    50% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+    100% {
+        transform: rotate(0) scale(1) skew(1deg)
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 30em;
+}
+.head__section img{
+		 display: block;
+	 margin-left: 12vw;
+	  margin-top: 0vw;
+	     padding:1vw;
+		  height: 8vw;
+		   width: 8vw;
+	  object-fit: cover;
+   border-radius: 50%;
+}
+.head__section p{
+    text-align: center;
+    color: #fff;
+}
+.social__links ul li{
+			width: 50%;
+	  margin-left: 4vw;
+		  padding: 1vw;
+	   background: rgba( 255, 255, 255, 0.1 );
+  backdrop-filter: blur( 0vw );
+    border-radius: 5%;
+	   transition: background 0.25s;
+  transform-style: preserve-3d;
+      perspective: 50vw;
+       box-shadow: 0 0 0.8vw  rgba(255, 255, 255, .12);
+}
+.js-tilt-glare{
+    border-radius: 10vw;
+}
+.social__links ul li a{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    font-size: 2vw;
+}
+.social__links ul li a i{
+    text-align: center;
+    line-height: 1vw;
+    font-size: 2vw;
+    text-shadow: 1vw 1vw 5vw rgba(0, 0, 0, 0.5);
+    transform: scale(1.4) translateZ(15vw);
+    transition: 0.25s;
+}
+.social__links ul li a span{
+    line-height: 1.5vw;
+}
+.social__links ul .instagram:hover{
+    background: #fd5949;
+}
+.social__links ul .youtube:hover{
+    background:#FF0000;
+}
+.social__links ul .telegram:hover{
+    background:#0088cc;
+}
+.social__links ul .github:hover{
+    background: #333;
+} 
+@media only screen and (max-width: 549px) {
+    .container{
+        width: 50vw;
+    }
+  }
+  
+.navProducts {
+	font-weight: bold;
+	font-size: 1vw;
+	font-family:Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";	
+	text-decoration: none;
+	text-shadow: 2px 2px #000000;
+	position: absolute;
+	color: white;
+	top: 2%;
+	left: 80%;
+	right: 4%;
+	width: 15%;
+	height: 30%;
+}
+
+
+.dropbtn {
+  background-color: #E6E6FA;
+			height:6vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		margin-top: -1.5vw;
+	   margin-left:0vw;
+			border: none;
+		appearance: none;
+  background-color: #000000;
+			border: 0.5vw solid #1A1A1A;
+	 border-radius: 5vw;
+		box-sizing: border-box;
+			 color: #FFFFFF;
+			cursor: pointer;
+		   display: inline-block;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	   font-weight: 600;
+	   line-height: normal;
+		   outline: none;
+	    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+	   user-select: none;
+-webkit-user-select: none;
+	   touch-action: manipulation;
+			  width: 8vw;
+		will-change: transform;
+}
+
+.dropbtn:disabled {
+  pointer-events: none;
+}
+
+.dropbtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.dropbtn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-left: 10px;
+  background-color: #FFFFFF;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.bodyProducts {
+	background-color: #FFFFF0;	
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+	.redorbluebtn {
+  background-color: #64f5c3;
+		  position:absolute;
+			height:10vw;
+			 width:10vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		   opacity: 1;
+		       top: 9vw;
+	   margin-left:60vw;
+			border: none;
+	 border-radius: 0vw;
+			 color: white;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	}
+
+  	.randbtn {
+  background-color: #64f5c3;
+		  position:absolute;
+			height:10vw;
+			 width:10vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		   opacity: 1;
+		       top: 9vw;
+	   margin-left:0vw;
+			border: none;
+	 border-radius: 0vw;
+			 color: white;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	}
+
+  
+	.oddbtn {
+  background-color: #64f5c3;
+		  position:absolute;
+			height:10vw;
+			 width:10vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		   opacity: 1;
+		       top: 9vw;
+	   margin-left:15vw;
+			border: none;
+	 border-radius: 0vw;
+			 color: white;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	}
+	
+	.changebackgrbtn {
+	 background-color: #64f5c3;
+		  position:absolute;
+			height:10vw;
+			 width:10vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		   opacity: 1;
+		       top: 9vw;
+	   margin-left:30vw;
+			border: none;
+	 border-radius: 0vw;
+			 color: white;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	}
+	
+	.classbtn {
+	 background-color: #64f5c3;
+		  position:absolute;
+			height:10vw;
+			 width:10vw;
+		text-align: center;
+   text-decoration: none;
+		   padding: 1vw;
+		   opacity: 1;
+		       top: 9vw;
+	   margin-left:45vw;
+			border: none;
+	 border-radius: 0vw;
+			 color: white;
+		 font-size: 1.5vw;
+	   font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+	}
+	
